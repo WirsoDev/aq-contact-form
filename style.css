@@ -1,0 +1,161 @@
+@font-face{
+  font-family: 'gilroy';
+  src: url('/fonts/Gilroy-Light.otf'); /* IE9 Compat Modes */
+  src: url('/fonts/Gilroy-Light.otf') format('embedded-opentype'), /* IE6-IE8 */
+      url('/fonts/Gilroy-Light.otf') format('woff2'), /* Super Modern Browsers */
+      url('/fonts/Gilroy-Light.otf') format('woff'), /* Pretty Modern Browsers */
+      url('/fonts/Gilroy-Light.otf')  format('truetype'), /* Safari, Android, iOS */
+      url('/fonts/Gilroy-Light.otf') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face{
+  font-family: 'gilroy-bold';
+  src: url('/fonts/Gilroy-ExtraBold.otf'); /* IE9 Compat Modes */
+  src: url('/fonts/Gilroy-ExtraBold.otf') format('embedded-opentype'), /* IE6-IE8 */
+      url('/fonts/Gilroy-ExtraBold.otf') format('woff2'), /* Super Modern Browsers */
+      url('/fonts/Gilroy-ExtraBold.otf') format('woff'), /* Pretty Modern Browsers */
+      url('/fonts/Gilroy-ExtraBold.otf')  format('truetype'), /* Safari, Android, iOS */
+      url('/fonts/Gilroy-ExtraBold.otf') format('svg'); /* Legacy iOS */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* APP */
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDE7E4;
+
+}
+
+.contact-cont{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.contact-title{
+  font-family: 'gilroy';
+}
+
+.contact-greating{
+  font-family: 'gilroy';
+}
+
+.contact-text{
+  font-family: 'gilroy';
+  max-width: 450px;
+}
+
+.contact-text span{
+  color: #B26942;
+  outline: none;
+}
+
+.contact-radial p{
+  font-family: 'gilroy';
+  margin-bottom: 5px;
+}
+
+.contact-radial label{
+  font-family: 'gilroy';
+}
+
+.contact-radial input{
+  margin-top: 5px;
+}
+
+.contact-send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-send p{
+  font-family: 'gilroy';
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: .85em;
+  text-align: center;
+  cursor: pointer;
+  transition: 200ms;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.contact-send h2{
+  font-family: 'gilroy';
+  font-size: .85em;
+  margin-left: 10px;
+  animation: open 200ms;
+  color: #B26942;
+}
+
+@keyframes open {
+  from{
+    transform: translateX(-200px) scaleX(0);
+    opacity: 0;
+  }to{
+    transform: translateX(0px) scaleX(1);
+    opacity: 1;
+  }
+}
+
+.hide{
+  display: none;
+}
+
+
+.contact-send p:hover{
+  box-shadow: rgba(178, 105, 66, 0.205) 0px 2px 10px;
+}
+
+
+.contact-terms{
+  width: 100%;
+  text-align: center;
+}
+
+.contact-terms a{
+  font-family: 'gilroy';
+  text-decoration: none;
+  color: black;
+  font-size: .85em;
+  font-style: italic;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+
+  border: 8px solid transparent;
+
+  /* The outline will be the outer circle */
+  outline: 1px solid #000000;
+}
+
+input:checked::before,
+input:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #B26942;
+  position: absolute;
+  transform: translateX(-5px) translateY(-5px);
+}
