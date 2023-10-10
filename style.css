@@ -19,6 +19,16 @@
       url('/fonts/Gilroy-ExtraBold.otf') format('svg'); /* Legacy iOS */
 }
 
+@font-face{
+  font-family: 'gilroy-semi';
+  src: url('/fonts/Gilroy-SemiBold.ttf'); /* IE9 Compat Modes */
+  src: url('/fonts/Gilroy-SemiBold.ttf') format('embedded-opentype'), /* IE6-IE8 */
+      url('/fonts/Gilroy-SemiBold.ttf') format('woff2'), /* Super Modern Browsers */
+      url('/fonts/Gilroy-SemiBold.ttf') format('woff'), /* Pretty Modern Browsers */
+      url('/fonts/Gilroy-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('/fonts/Gilroy-SemiBold.ttf') format('svg'); /* Legacy iOS */
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -47,7 +57,8 @@
 }
 
 .contact-title{
-  font-family: 'gilroy';
+  font-family: 'gilroy-semi';
+  font-size: 16px;
 }
 
 .contact-greating{
@@ -57,6 +68,7 @@
 .contact-text{
   font-family: 'gilroy';
   max-width: 450px;
+  font-size: 16px;
 }
 
 .contact-text span{
